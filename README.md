@@ -156,12 +156,16 @@ The application follows SvelteKit's recommended data flow patterns:
 - npm or yarn
 
 ### Environment Variables
-Copy `.env.example` to `.env` and add your TMDB API credentials:
+Copy `.env.example` to `.env` and add your required credentials:
 
 ```
+# Database Configuration
+DATABASE_URL=local.db
+
+# TMDB API Configuration
 TMDB_API_KEY=your_api_key
 TMDB_API_URL=https://api.themoviedb.org/3
-SESSION_SECRET=your_session_secret
+TMDB_API_READ_ACCESS_TOKEN=your_access_token
 ```
 
 ### Installation
